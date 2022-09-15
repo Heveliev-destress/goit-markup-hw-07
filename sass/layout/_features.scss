@@ -1,0 +1,37 @@
+.features{  padding-top: 0;
+}
+.features-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features-flex{
+    display: flex;
+    column-gap: 30px;
+}
+.features-img{}
+.features-img-box{
+    position: relative;
+
+}
+.features-text-backdrop{
+    background-color:var(--features-text-backdrop-background-color);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+.features-text{
+    font-weight: 700;
+    line-height: 1.14;
+display:flex ;
+height: 70px;
+align-items: center;
+justify-content: center;
+    text-transform: uppercase;
+    color: var(--text-light-color);
+   
+    }

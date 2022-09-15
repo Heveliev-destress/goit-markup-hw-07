@@ -1,0 +1,40 @@
+.desc{
+    padding-top:86px;
+
+}
+
+    .desc-flex{      
+    column-gap: 30px ;
+    display: flex;
+   flex-wrap: wrap;
+    }
+    .desc-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--svg-background-color);
+    margin-bottom: 30px;}
+    .desc-list-item{
+        max-width: 270px;
+        flex-basis: calc((100% - 30px) / 4);
+        
+    }
+    .desc-card-down{
+    
+    }
+.desc-subtitle{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.desc-text{
+    line-height: 1.72;
+    color: var(--secondary-text-dark-color);}
