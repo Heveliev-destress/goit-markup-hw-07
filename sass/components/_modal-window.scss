@@ -24,13 +24,13 @@
     box-shadow:  0px 1px 3px var(--modal-close-btn-shadow-first-color),
       0px 1px 1px var(--modal-close-btn-shadow-second-color),
       0px 2px 1px var(--modal-close-btn-shadow-third-color);
+    &:hover,
+    &:focus{
+    fill:var(--accent-color);
+}
 }
 .modal-close-icon{
     width: 18px;
     height: 18px;
     transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus{
-    fill:var(--accent-color);
 }

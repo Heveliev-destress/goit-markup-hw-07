@@ -22,19 +22,19 @@
    background-color var(--transition-duration) var(--transition-timing-function),
    box-shadow var(--transition-duration) var(--transition-timing-function);
 
-
+   &:hover,
+   &:focus{
+       background-color: var(--accent-color);
+       color: var(--text-light-color);
+       box-shadow: 0 4px 4px 0 var(--portfoio-btn-shadow);
+       
+   }
 
 }
 .portfolio-first-btn{
     padding: 6px 25px;
 }
-.portfolio-btn:hover,
-.portfolio-btn:focus{
-    background-color: var(--accent-color);
-    color: var(--text-light-color);
-    box-shadow: 0 4px 4px 0 var(--portfoio-btn-shadow);
-    
-}
+
 .portfolio-flex{
     display: flex;
     flex-wrap: wrap;
@@ -43,17 +43,20 @@
 .portfolio-project-box{
     max-width: 370px;
     flex-basis: calc((100% - 30px) / 3);}
-    .box-link{
+.box-link{
         display: block;
         transition: box-shadow var(--transition-duration) var(--transition-timing-function);
-    }
-
-.box-link:hover,
-.box-link:focus
+        &:hover,
+        &:focus
 { 
     box-shadow: 0 4px 4px 0 var(--portfolio-card-hover-shadow);}
-
-
+    &:focus .overlay{
+        transform: translateY(0);
+    }
+    &:hover .overlay{
+        transform: translateY(0);
+    }
+    }
 .portfolio-card-down{
     border-left:solid 1px var(--portfolio-box-border-color) ;
     border-right:solid 1px var(--portfolio-box-border-color) ;
@@ -66,12 +69,7 @@
     position: relative;
 }
 .portfolio-img{}
-.box-link:focus .overlay{
-    transform: translateY(0);
-}
-.box-link:hover .overlay{
-    transform: translateY(0);
-}
+
 .overlay{
     position: absolute;
     font-weight: 400;

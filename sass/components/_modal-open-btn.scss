@@ -15,10 +15,9 @@
     color: var(--text-light-color);
     transition: background-color var(--transition-duration) var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function) ;
-  
-}
-.modal_open_btn:hover,
-.modal_open_btn:focus{
+    &:hover,
+    &:focus{
     background-color: var(--accent-color);
     color:var(--text-light-color);
+}
 }
