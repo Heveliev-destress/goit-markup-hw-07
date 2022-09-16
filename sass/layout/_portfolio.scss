@@ -50,12 +50,7 @@
         &:focus
 { 
     box-shadow: 0 4px 4px 0 var(--portfolio-card-hover-shadow);}
-    &:focus .overlay{
-        transform: translateY(0);
-    }
-    &:hover .overlay{
-        transform: translateY(0);
-    }
+    
     }
 .portfolio-card-down{
     border-left:solid 1px var(--portfolio-box-border-color) ;
@@ -85,6 +80,12 @@
     overflow-y: auto;
     transform: translateY(100%);
     transition: transform var(--transition-duration) var(--transition-timing-function) ;
+    .box-link:focus &{
+        transform: translateY(0);
+    }
+    .box-link:hover &{
+        transform: translateY(0);
+    }
     }
 .portfolio-subtitle{
     color: var(--primary-text-dark-color);

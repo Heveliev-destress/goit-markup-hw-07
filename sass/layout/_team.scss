@@ -36,11 +36,7 @@
     &:focus{ 
     background-color: var(--accent-color);
 }
-    &:hover .social-icon,
-    &:focus .social-icon{
-    fill: var(--team-social-color-hover-focus );
 
-}
     
 }
 
@@ -49,6 +45,11 @@
     height:20px ;
     fill: var(--team-social-color);
     transition:fill var(--transition-duration) var(--transition-timing-function);
+    .social-link-team:hover &,
+.social-link-team:focus &{
+    fill: var(--team-social-color-hover-focus );
+
+}
 
 }
     .team-one-persone{

@@ -16,6 +16,10 @@
     height:60px ;
     fill: var(--client-logo-color);
     transition: fill var(--transition-duration) var(--transition-timing-function);
+    .client-link:hover &,
+    .client-link:focus &{
+    fill: var(--accent-color);
+}
 }
 
 .client-link{
@@ -31,8 +35,5 @@
     &:focus{
     border: solid 1px var(--accent-color);
 }
-    &:hover .icon-logo,
-    &:focus .icon-logo{
-    fill: var(--accent-color);
-}
+
 }

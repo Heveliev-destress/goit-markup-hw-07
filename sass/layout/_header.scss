@@ -87,16 +87,17 @@
     &:focus{
     color:var(--accent-color);
     }
-    &:hover .icon-email,
-    &:focus .icon-email{
-        fill: var(--accent-color);
-    }
+   
 
 }
 .icon-email{ 
     width:16px ; height: 12px;
 fill: var(--header-icon-color);
 transition: fill var(--transition-duration) var(--transition-timing-function);
+.header-email:hover &,
+.header-email:focus &{
+    fill: var(--accent-color);
+}
 
 }
 
@@ -113,15 +114,16 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
     &:focus{
     color:var(--accent-color);
     }
-    &:focus .icon-phone,
-    &:hover .icon-phone{
-    fill: var(--accent-color);
-}
+   
 
 }
 .icon-phone{
     fill: var(--header-icon-color);
      width: 10px; height: 16px;
      transition: fill var(--transition-duration) var(--transition-timing-function);
+     .header-phone-number:focus &,
+     .header-phone-number:hover &{
+     fill: var(--accent-color);
+ }
 
     }

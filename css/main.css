@@ -242,9 +242,6 @@ body {
   border-color: var(--accent-color);
   outline: none;
 }
-.modal-form-input:focus + .modal-icon-user {
-  fill: var(--accent-color);
-}
 
 .modal-form-field-text {
   font-weight: 400;
@@ -271,6 +268,9 @@ body {
   width: 18px;
   height: 18px;
   transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.modal-form-input:focus + .modal-icon-user {
+  fill: var(--accent-color);
 }
 
 .modal-form-checkbox {
@@ -314,17 +314,6 @@ body {
   outline: none;
 }
 
-.modal-form-policy:checked + .modal-checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-.modal-form-policy:checked + .modal-checkbox-icon .modal-checkbox-icon-use {
-  display: block;
-}
-.modal-form-policy:focus + .modal-checkbox-icon {
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
-
 .modal-checkbox-icon {
   margin-right: 8.38px;
   width: 16px;
@@ -333,9 +322,19 @@ body {
   fill: var(--modal-fill-icon-use);
   border-radius: 2px;
 }
+.modal-form-policy:checked + .modal-checkbox-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.modal-form-policy:focus + .modal-checkbox-icon {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
 
 .modal-checkbox-icon-use {
   display: none;
+}
+.modal-form-policy:checked + .modal-checkbox-icon .modal-checkbox-icon-use {
+  display: block;
 }
 
 .modal-btn-submit {
@@ -437,15 +436,15 @@ body {
 .header-email:hover, .header-email:focus {
   color: var(--accent-color);
 }
-.header-email:hover .icon-email, .header-email:focus .icon-email {
-  fill: var(--accent-color);
-}
 
 .icon-email {
   width: 16px;
   height: 12px;
   fill: var(--header-icon-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.header-email:hover .icon-email, .header-email:focus .icon-email {
+  fill: var(--accent-color);
 }
 
 .header-phone-number {
@@ -461,15 +460,15 @@ body {
 .header-phone-number:hover, .header-phone-number:focus {
   color: var(--accent-color);
 }
-.header-phone-number:focus .icon-phone, .header-phone-number:hover .icon-phone {
-  fill: var(--accent-color);
-}
 
 .icon-phone {
   fill: var(--header-icon-color);
   width: 10px;
   height: 16px;
   transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.header-phone-number:focus .icon-phone, .header-phone-number:hover .icon-phone {
+  fill: var(--accent-color);
 }
 
 .hero {
@@ -618,15 +617,15 @@ body {
 .social-link-team:hover, .social-link-team:focus {
   background-color: var(--accent-color);
 }
-.social-link-team:hover .social-icon, .social-link-team:focus .social-icon {
-  fill: var(--team-social-color-hover-focus);
-}
 
 .social-icon {
   width: 20px;
   height: 20px;
   fill: var(--team-social-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.social-link-team:hover .social-icon, .social-link-team:focus .social-icon {
+  fill: var(--team-social-color-hover-focus);
 }
 
 .team-one-persone {
@@ -679,6 +678,9 @@ body {
   fill: var(--client-logo-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+.client-link:hover .icon-logo, .client-link:focus .icon-logo {
+  fill: var(--accent-color);
+}
 
 .client-link {
   display: flex;
@@ -692,9 +694,6 @@ body {
 }
 .client-link:hover, .client-link:focus {
   border: solid 1px var(--accent-color);
-}
-.client-link:hover .icon-logo, .client-link:focus .icon-logo {
-  fill: var(--accent-color);
 }
 
 .footer {
@@ -889,12 +888,6 @@ body {
 .box-link:hover, .box-link:focus {
   box-shadow: 0 4px 4px 0 var(--portfolio-card-hover-shadow);
 }
-.box-link:focus .overlay {
-  transform: translateY(0);
-}
-.box-link:hover .overlay {
-  transform: translateY(0);
-}
 
 .portfolio-card-down {
   border-left: solid 1px var(--portfolio-box-border-color);
@@ -923,6 +916,12 @@ body {
   overflow-y: auto;
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+.box-link:focus .overlay {
+  transform: translateY(0);
+}
+.box-link:hover .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-subtitle {
