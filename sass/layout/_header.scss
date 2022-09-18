@@ -24,9 +24,7 @@
 .menu-item{}
 
 .menu-link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font($fs,500,1.14,0.02em);
    color: var(--primary-text-dark-color);
    transition: color var(--transition-duration) var(--transition-timing-function) ;
     position: relative;
@@ -74,10 +72,7 @@
     margin-left: auto;
 }
 .header-email{
-
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font($fs,500,1.14,0.02em);
     color: var(--secondary-text-dark-color);
     display: flex;
     align-items: center;
@@ -102,9 +97,7 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-phone-number{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font($fs,500,1.14,0.02em);
     color:var(--secondary-text-dark-color);
     display: flex;
     column-gap: 10px;

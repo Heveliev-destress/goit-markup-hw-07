@@ -27,12 +27,11 @@
     
     }
 .desc-subtitle{
+    @include font(14px,700,1.14);
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-transform: uppercase;
 }
 .desc-text{
+    @include font($fw:400,$lh:1.72);
     line-height: 1.72;
     color: var(--secondary-text-dark-color);}
