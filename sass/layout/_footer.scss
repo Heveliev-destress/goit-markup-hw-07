@@ -13,10 +13,10 @@
 
 .address{font-style: normal;
 }
-.item-location{
+.address__location{
     margin-bottom: 9px;
 }
-.location{
+.location__link{
     font-weight: 400;
     line-height: 1.72;
     color: var(--text-light-color);
@@ -26,10 +26,10 @@
         color:var(--accent-color)
         }
     }
-    .item-phone-number{
+    .addres__tel{
         margin-bottom: 9px;
     }
-.footer-phone-number{
+.footer__tel{
     font-weight: 400;
     line-height: 1.72;
     color: var(--footer-contact-color);
@@ -39,7 +39,7 @@
         color:var(--accent-color)
         }
 }
-.footer-email{
+.footer__email{
     font-weight: 400;
     line-height: 1.72;
     color: var(--footer-contact-color);
@@ -50,22 +50,22 @@
     }
     }
     
-.footer-social{
+.footer__social{
         margin-right: auto;
 
     }
-.footer-text {
+.footer__text {
     font-weight: 700;
     line-height: 1.14;
         text-transform: uppercase;
     color: var(--text-light-color);
     margin-bottom: 20px;}
-.footer-social-list{
+.footer__social_list{
         display: flex;
         column-gap: 10px;
         
     }
-.footer-social-link{
+.footer__social_link{
         @extend %align;
         width: 44px;
         height: 44px;
@@ -78,27 +78,27 @@
         background-color: var(--accent-color);
     }
     }
-.footer-social-icon{
+.footer__social_icon{
         fill: var(--footer-social-icon-color);
         width:20px ;
     height: 20px;}
 
-    .footer-box-form{
+    .footer__form_box{
         margin-left: auto;
     }
-    .footer-form{
+    .footer__form{
         display: flex;
         column-gap: 12px;
 
     }
-    .footer-form-text{
+    .footer__form_text{
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--text-light-color);
         margin-bottom: 20px;
     }
-    .footer-input{
+    .footer__input{
     color: var(--text-light-color);
         padding: 15px 16px ;
         width: 358px;
@@ -113,7 +113,7 @@
         }
     }
     
-    .footer-form-btn{
+    .footer__form_btn{
         padding: 10px 28px;
        @extend %align;
         column-gap: 10px;
@@ -127,7 +127,7 @@
         border:1px solid var(--footer-btn-submit-border-color);
         border-radius: 4px;
     }
-    .icon-send{
+    .footer__form_btn__icon{
         fill:var(--footer-icon-send-fill-color);
         display: block;
     }
