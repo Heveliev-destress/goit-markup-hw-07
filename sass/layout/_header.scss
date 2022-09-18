@@ -1,29 +1,20 @@
 .header-flex{
     align-items: center;
     display: flex;
-    
 }
-.header{
+.page-header{
     border-bottom: solid 1px var(--header-border-color) ;
-
 }
-
-
-.nav{
+.page-navigation{
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 .menu{ 
     display: flex;
     align-items:center;
-    column-gap: 50px ;
-    
-    
+    column-gap: 50px ; 
 }
-.menu-item{}
-
-.menu-link {
+.menu__link {
     @include font($fs,500,1.14,0.02em);
    color: var(--primary-text-dark-color);
    transition: color var(--transition-duration) var(--transition-timing-function) ;
@@ -48,10 +39,8 @@
         left: 0;
         bottom:0;
         opacity: 1;
-      
     }
     }
-
 .current::after {   
      position: absolute;
     content: "";
@@ -62,7 +51,6 @@
     left: 0;
     bottom:0;
 }
-
 .link.current {
     color: var(--accent-color);
 }
@@ -82,8 +70,6 @@
     &:focus{
     color:var(--accent-color);
     }
-   
-
 }
 .icon-email{ 
     width:16px ; height: 12px;
@@ -93,9 +79,7 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
 .header-email:focus &{
     fill: var(--accent-color);
 }
-
 }
-
 .header-phone-number{
     @include font($fs,500,1.14,0.02em);
     color:var(--secondary-text-dark-color);
@@ -107,8 +91,6 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
     &:focus{
     color:var(--accent-color);
     }
-   
-
 }
 .icon-phone{
     fill: var(--header-icon-color);
@@ -118,5 +100,4 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
      .header-phone-number:hover &{
      fill: var(--accent-color);
  }
-
     }

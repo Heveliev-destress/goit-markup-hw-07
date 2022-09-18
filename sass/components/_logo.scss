@@ -6,7 +6,7 @@
     color:var(--logo-text-color);
     
 }
-.logo-web{color:var(--logo-web-color) ; }
+.header-logo__web{color:var(--logo-web-color) ; }
 .footer-logo{
     font-family: var(--secondary-font);
     @include font(26px,700,1.19);

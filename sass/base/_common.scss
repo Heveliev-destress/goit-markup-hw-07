@@ -21,7 +21,7 @@ button {  cursor: pointer;
 body {
     font-family: var(--primary-font);
     color:var(--primary-text-dark-color);
-    @include font($fs,$ls);
+    @include font($fs:14px, $ls: 0.03em);
     background-color: var(--primary-background-color);
 
 }
