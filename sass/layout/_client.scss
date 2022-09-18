@@ -23,9 +23,7 @@
 }
 
 .client-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     width: 170px;
     height: 92px;
     border: solid 1px var(--client-logo-border-color);

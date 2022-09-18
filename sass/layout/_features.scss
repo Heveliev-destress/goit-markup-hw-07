@@ -27,10 +27,9 @@
 .features-text{
     font-weight: 700;
     line-height: 1.14;
-display:flex ;
+@extend %align;
 height: 70px;
-align-items: center;
-justify-content: center;
+
     text-transform: uppercase;
     color: var(--text-light-color);
    
