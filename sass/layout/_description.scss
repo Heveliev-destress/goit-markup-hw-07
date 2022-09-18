@@ -1,37 +1,36 @@
-.desc{
+.description{
     padding-top:86px;
 
 }
 
-    .desc-flex{      
+    .description__list{      
     column-gap: 30px ;
     display: flex;
    flex-wrap: wrap;
     }
-    .desc-icon{
-        width: 70px;
-        height: 70px;
-    }
-    .svg{
-        @extend %align;
-        width: 270px;
-        height: 120px;
-        background-color: var(--svg-background-color);
-    margin-bottom: 30px;}
-    .desc-list-item{
+    .list__item{
         max-width: 270px;
         flex-basis: calc((100% - 30px) / 4);
         
     }
-    .desc-card-down{
-    
+    .list__item_icon{
+        width: 70px;
+        height: 70px;
     }
-.desc-subtitle{
-    @include font(14px,700,1.14);
+    .list__item_icon_optoins{
+        @extend %align;
+        width: 270px;
+        height: 120px;
+        background-color: var(--svg-background-color);
+        margin-bottom: 30px;}
+.description__card_subtitle{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.desc-text{
-    @include font($fw:400,$lh:1.72);
+.description__card_text{
+    font-weight: 400;
     line-height: 1.72;
     color: var(--secondary-text-dark-color);}

@@ -1,4 +1,4 @@
-.header-flex{
+.header_flex{
     align-items: center;
     display: flex;
 }
@@ -15,7 +15,9 @@
     column-gap: 50px ; 
 }
 .menu__link {
-    @include font($fs,500,1.14,0.02em);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
    color: var(--primary-text-dark-color);
    transition: color var(--transition-duration) var(--transition-timing-function) ;
     position: relative;
@@ -41,7 +43,7 @@
         opacity: 1;
     }
     }
-.current::after {   
+.menu__link_current::after {   
      position: absolute;
     content: "";
     background-color: var(--accent-color);
@@ -51,16 +53,18 @@
     left: 0;
     bottom:0;
 }
-.link.current {
+.link.menu__link_current {
     color: var(--accent-color);
 }
-.contact{ 
+.header-contact{ 
     display:flex;
     column-gap:50px;
     margin-left: auto;
 }
-.header-email{
-    @include font($fs,500,1.14,0.02em);
+.header-contact__email{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--secondary-text-dark-color);
     display: flex;
     align-items: center;
@@ -71,17 +75,19 @@
     color:var(--accent-color);
     }
 }
-.icon-email{ 
+.email__icon{ 
     width:16px ; height: 12px;
 fill: var(--header-icon-color);
 transition: fill var(--transition-duration) var(--transition-timing-function);
-.header-email:hover &,
-.header-email:focus &{
+.header-contact__email:hover &,
+.header-contact__email:focus &{
     fill: var(--accent-color);
 }
 }
-.header-phone-number{
-    @include font($fs,500,1.14,0.02em);
+.header-contact__tel{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color:var(--secondary-text-dark-color);
     display: flex;
     column-gap: 10px;
@@ -92,12 +98,12 @@ transition: fill var(--transition-duration) var(--transition-timing-function);
     color:var(--accent-color);
     }
 }
-.icon-phone{
+.tel__icon{
     fill: var(--header-icon-color);
      width: 10px; height: 16px;
      transition: fill var(--transition-duration) var(--transition-timing-function);
-     .header-phone-number:focus &,
-     .header-phone-number:hover &{
+     .header-contact__tel:focus &,
+     .header-contact__tel:hover &{
      fill: var(--accent-color);
  }
     }

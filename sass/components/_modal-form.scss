@@ -3,7 +3,9 @@
     flex-direction: column;
 }
 .modal-title{
-    @include font(20px,700,1.15);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
     text-align: center;
     margin-bottom: 12px;
  
@@ -26,7 +28,10 @@
 }
 
 .modal-form-field-text{
-    @include font(12px,400,1.17,0.01em);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     color: var(--secondary-text-dark-color);
     display: block;
     margin-bottom: 4px;
@@ -59,7 +64,9 @@
     justify-content: center;
 }
 .modal-form-policy-text{
-    @include font(14px,400,1.72);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.72;
     color: var(--secondary-text-dark-color);
 }
 .policy-link{
@@ -127,7 +134,10 @@
 .modal-btn-submit{
     color: var(--text-light-color);
     align-self: center;
-    @include font(16px,700,1.88,0.06em);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     background-color:var(--modal-btn-background-color);
     text-align: center;
     border:1px solid var(--modal-btn-border-color) ;

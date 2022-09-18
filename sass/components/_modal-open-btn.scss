@@ -4,7 +4,10 @@
     border: solid 1px var(--modal-btn-border-color);
     border-radius: 4px;
     padding: 10px 32px;
-    @include font(16px,700,1.88,0.06em);
+    font-size:16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     text-align: center;
