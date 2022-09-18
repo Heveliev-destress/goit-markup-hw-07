@@ -42,7 +42,7 @@
     margin-bottom: 16px;
  }
 
-.team__social_list{
+.social__list{
     display: flex;
     column-gap: 10px;
     justify-content: center;
@@ -50,7 +50,7 @@
 
 
 }
-.social-link-team{
+.social__link{
 @extend %align;
     width: 44px;
     height: 44px;
@@ -60,22 +60,18 @@
     &:hover,
     &:focus{ 
     background-color: var(--accent-color);
+}   
 }
-
-    
-}
-
-.social-icon{
+.social__icon{
     width: 20px;
     height:20px ;
     fill: var(--team-social-color);
     transition:fill var(--transition-duration) var(--transition-timing-function);
-    .social-link-team:hover &,
-.social-link-team:focus &{
+    .social__link:hover &,
+    .social__link:focus &{
     fill: var(--team-social-color-hover-focus );
 
 }
-
 }
 
 

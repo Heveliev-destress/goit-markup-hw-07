@@ -1,28 +1,17 @@
-.client{}
-.client-title{
+
+.client__title{
     font-size:36px;
     font-weight: 700;
     line-height: 1.17;
     text-align: center;
     margin-bottom:50px ;
 }
-.client-list{
+.client__list{
     display: flex;
     justify-content: center;
     column-gap: 30px;
 }
-.icon-logo{
-    width:106px ;
-    height:60px ;
-    fill: var(--client-logo-color);
-    transition: fill var(--transition-duration) var(--transition-timing-function);
-    .client-link:hover &,
-    .client-link:focus &{
-    fill: var(--accent-color);
-}
-}
-
-.client-link{
+.client__link{
     @extend %align;
     width: 170px;
     height: 92px;
@@ -35,3 +24,15 @@
 }
 
 }
+.client__logo{
+    width:106px ;
+    height:60px ;
+    fill: var(--client-logo-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+    .client__link:hover &,
+    .client__link:focus &{
+    fill: var(--accent-color);
+}
+}
+
+

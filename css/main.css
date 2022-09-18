@@ -57,7 +57,7 @@
   --footer-input-placeholder-color:rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-btn, .footer-social-link, .client-link, .social-link-team, .features__text, .list__item_icon_optoins, .modal-close-btn {
+.footer-form-btn, .footer-social-link, .client__link, .social__link, .features__text, .list__item_icon_optoins, .modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,11 +135,11 @@ body {
   color: var(--logo-text-color);
 }
 
-.header-logo__web {
+.logo-web {
   color: var(--logo-web-color);
 }
 
-.footer-logo {
+.footer__logo {
   font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
@@ -627,34 +627,34 @@ body {
   margin-bottom: 16px;
 }
 
-.team__social_list {
+.social__list {
   display: flex;
   column-gap: 10px;
   justify-content: center;
 }
 
-.social-link-team {
+.social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
-.social-link-team:hover, .social-link-team:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: var(--team-social-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.social-link-team:hover .social-icon, .social-link-team:focus .social-icon {
+.social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: var(--team-social-color-hover-focus);
 }
 
-.client-title {
+.client__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -662,31 +662,31 @@ body {
   margin-bottom: 50px;
 }
 
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
 }
 
-.icon-logo {
-  width: 106px;
-  height: 60px;
-  fill: var(--client-logo-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-.client-link:hover .icon-logo, .client-link:focus .icon-logo {
-  fill: var(--accent-color);
-}
-
-.client-link {
+.client__link {
   width: 170px;
   height: 92px;
   border: solid 1px var(--client-logo-border-color);
   border-radius: 4px;
   transition: border var(--transition-duration) var(--transition-timing-function);
 }
-.client-link:hover, .client-link:focus {
+.client__link:hover, .client__link:focus {
   border: solid 1px var(--accent-color);
+}
+
+.client__logo {
+  width: 106px;
+  height: 60px;
+  fill: var(--client-logo-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.client__link:hover .client__logo, .client__link:focus .client__logo {
+  fill: var(--accent-color);
 }
 
 .footer {
@@ -694,12 +694,12 @@ body {
   padding: 60px 0;
 }
 
-.footer-flex {
+.footer_flex {
   display: flex;
   align-items: baseline;
 }
 
-.logo-addres {
+.footer__logo_position {
   margin-right: 68px;
 }
 
